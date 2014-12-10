@@ -65,9 +65,9 @@ public class OGMapperSVC_impl extends OGMapperPOA{
     public RETURN_VALUE requestCurrentBuiltMap(OGMapHolder map) {
         // Please insert your code here and remove the following warning pragma
         // TODO "Code missing in function <RETURN_VALUE requestCurrentBuiltMap(OGMap map)>"
-    	OGMapHolder tmpMap = new OGMapHolder(rtc.getOGMap());
-    	map = tmpMap;
-        return null;
+    	OGMapHolder serverMap = new OGMapHolder(rtc.getOGMap());
+    	map = serverMap;
+        return RETURN_VALUE.RETVAL_OK;
     }
 
 //  End of example implementational code
