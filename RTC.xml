@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<rtc:RtcProfile rtc:version="0.2" rtc:id="RTC:Sugar Sweet Robotics:Navigation:MapServer:1.0.0" xmlns:rtcExt="http://www.openrtp.org/namespaces/rtc_ext" xmlns:rtcDoc="http://www.openrtp.org/namespaces/rtc_doc" xmlns:rtc="http://www.openrtp.org/namespaces/rtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <rtc:BasicInfo xsi:type="rtcExt:basic_info_ext" rtcExt:saveProject="MapServer_java" rtc:updateDate="2014-08-11T11:44:17+09:00" rtc:creationDate="2014-08-08T13:51:50+09:00" rtc:version="1.0.0" rtc:vendor="Sugar Sweet Robotics" rtc:maxInstances="1" rtc:executionType="PeriodicExecutionContext" rtc:executionRate="1000.0" rtc:description="MapServer RTC " rtc:category="Navigation" rtc:componentKind="DataFlowComponent" rtc:activityType="PERIODIC" rtc:componentType="STATIC" rtc:name="MapServer">
+<rtc:RtcProfile rtc:version="0.2" rtc:id="RTC:Sugar Sweet Robotics:Navigation:MapServer:1.0.0" xmlns:rtc="http://www.openrtp.org/namespaces/rtc" xmlns:rtcExt="http://www.openrtp.org/namespaces/rtc_ext" xmlns:rtcDoc="http://www.openrtp.org/namespaces/rtc_doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <rtc:BasicInfo xsi:type="rtcExt:basic_info_ext" rtcExt:saveProject="MapServer" rtc:updateDate="2014-08-11T11:44:17+09:00" rtc:creationDate="2014-08-08T13:51:50+09:00" rtc:version="1.0.0" rtc:vendor="Sugar Sweet Robotics" rtc:maxInstances="1" rtc:executionType="PeriodicExecutionContext" rtc:executionRate="1000.0" rtc:description="MapServer RTC " rtc:category="Navigation" rtc:componentKind="DataFlowComponent" rtc:activityType="PERIODIC" rtc:componentType="STATIC" rtc:name="MapServer">
+        <rtcExt:VersionUpLogs></rtcExt:VersionUpLogs>
         <rtcExt:VersionUpLogs></rtcExt:VersionUpLogs>
     </rtc:BasicInfo>
     <rtc:Actions>
@@ -28,7 +29,7 @@
         </rtc:Configuration>
     </rtc:ConfigurationSet>
     <rtc:ServicePorts xsi:type="rtcExt:serviceport_ext" rtcExt:position="LEFT" rtc:name="mapServer">
-        <rtc:ServiceInterface xsi:type="rtcExt:serviceinterface_ext" rtcExt:variableName="mapServer" rtc:path="C:\Users\ysuga\rtm\idl\" rtc:type="RTC::OGMapServer" rtc:idlFile="C:\Users\ysuga\rtm\idl\MobileRobot.idl" rtc:instanceName="OGMapServer" rtc:direction="Provided" rtc:name="OGMapServer"/>
+        <rtc:ServiceInterface xsi:type="rtcExt:serviceinterface_ext" rtcExt:variableName="mapServer" rtc:path="C:\Users\ogata\Desktop\MappingRTCs\MapServer\idl" rtc:type="RTC::OGMapServer" rtc:idlFile="C:\Users\ogata\Desktop\MappingRTCs\MapServer\idl\MobileRobot.idl" rtc:instanceName="OGMapServer" rtc:direction="Provided" rtc:name="OGMapServer"/>
     </rtc:ServicePorts>
     <rtc:Language xsi:type="rtcExt:language_ext" rtc:kind="Java"/>
 </rtc:RtcProfile>

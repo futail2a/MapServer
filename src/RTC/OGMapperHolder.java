@@ -4,7 +4,7 @@ package RTC;
 * RTC/OGMapperHolder.java .
 * IDL-to-Javaコンパイラ(ポータブル)、バージョン"3.2"によって生成されました
 * idl/MobileRobot.idlから
-* 2014年8月11日 11時47分26秒 JST
+* 2014年12月26日 14時29分53秒 JST
 */
 
 

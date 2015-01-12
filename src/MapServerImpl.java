@@ -178,13 +178,20 @@ public class MapServerImpl extends DataFlowComponentBase {
     		ogMap.map.row = (int)(ogMap.config.origin.position.x / ogMap.config.xScale);
     		ogMap.map.column = (int)(ogMap.config.origin.position.y / ogMap.config.yScale);
     		ogMap.map.cells = new byte[file.getWidth() * file.getHeight()];
+    		/*
     		for(int i = 0;i < file.getHeight();i++) {
     			for(int j = 0;j < file.getWidth();j++) {
     				byte r = (byte)(0xFF & file.getRGB(i, j));
     				ogMap.map.cells[i*file.getWidth() + j] = r;
     			}
     		}
-    		
+    		*/
+    		for(int i = 0;i < file.getHeight();i++) {
+    			for(int j = 0;j < file.getWidth();j++) {
+    				byte r = (byte)(0xFF & file.getRGB(i, j));
+    				ogMap.map.cells[(file.getWidth()-1-j)*file.getWidth() + i] = r;
+    			}
+    		}
     		
     		System.out.println(obj);
 			///BufferedImage image = ImageIO.read(new File(m_filename.value));
