@@ -26,6 +26,9 @@ public class OGMapServerSVC_impl extends OGMapServerPOA{
         // Please insert your code here and remove the following warning pragma
         // TODO "Code missing in function <RETURN_VALUE requestCurrentBuiltMap(OGMap map)>"
     	map.value = rtc.getOGMap();
+    	if(rtc.hasGotMap == false){
+    		return RTC.RETURN_VALUE.RETVAL_EMPTY_MAP;
+    	}    	
         return RTC.RETURN_VALUE.RETVAL_OK;
     }
 

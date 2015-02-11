@@ -41,7 +41,9 @@ public class MapServerImpl extends DataFlowComponentBase {
   private OGMap ogMap;
   
   public OGMap getOGMap() {return ogMap;}
-
+  
+  public boolean hasGotMap = false;
+  
 	/*!
    * @brief constructor
    * @param manager Maneger Object
@@ -194,11 +196,13 @@ public class MapServerImpl extends DataFlowComponentBase {
     		}
     		
     		System.out.println(obj);
+    		hasGotMap = true;
 			///BufferedImage image = ImageIO.read(new File(m_filename.value));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			return RTC.ReturnCode_t.RTC_ERROR;
+			hasGotMap = false;
+			//return RTC.ReturnCode_t.RTC_ERROR;
 		}
         return super.onActivated(ec_id);
     }
